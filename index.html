@@ -13,27 +13,33 @@
     </div>
     <form>
       <div class="intro">Let's get you drifting!</div>
+      <div class="section">
+        <div class="section1">
+          <label for="first_name">FIRST NAME</label>
+          <input type="text" id="first_name" name="first_Name" required />
 
-      <div class="section1">
-        <label for="first_name">FIRST NAME</label>
-        <input type="text" id="first_name" name="first_Name" required />
+          <label for="last_name">LAST NAME</label>
+          <input type="text" id="last_name" name="last_name" required />
 
-        <label for="last_name">LAST NAME</label>
-        <input type="text" id="last_name" name="last_name" required />
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required />
+        </div>
 
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" id="email" required />
-      </div>
+        <div class="section2">
+          <label for="phone_number">PHONE NUMBER</label>
+          <input type="tel" name="phone_number" id="phone_number" required />
 
-      <div class="section2">
-        <label for="phone_number">PHONE NUMBER</label>
-        <input type="tel" name="phone_number" id="phone_number" required />
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" required />
 
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" id="password" required />
-
-        <label for="confirm">CONFIRM PASSWORD</label>
-        <input type="password" name="confirm_password" id="confirm" required />
+          <label for="confirm">CONFIRM PASSWORD</label>
+          <input
+            type="password"
+            name="confirm_password"
+            id="confirm"
+            required
+          />
+        </div>
       </div>
 
       <button type="submit">Create Account</button>

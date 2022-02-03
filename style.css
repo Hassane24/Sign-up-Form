@@ -4,18 +4,16 @@
   box-sizing: border-box;
   font-weight: normal;
 }
+@font-face {
+  font-family: font;
+  src: url(hyperviper.ttf);
+}
 
 body {
+  font-family: font, Arial, Helvetica, sans-serif;
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.background {
-  /* display: block;
-  width: min(30vw, 100%);
-  height: 100vh;
-  background-image: url("bg.jpg"); */
 }
 
 img {
@@ -34,5 +32,24 @@ img {
 
 form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+}
+
+.section {
+  display: flex;
+  align-self: flex-start;
+}
+
+.intro {
+  align-self: flex-start;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.section1 {
+  margin-left: 24px;
+  margin-right: 10rem;
 }
