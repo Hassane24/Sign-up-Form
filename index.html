@@ -5,44 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Sing Up To Drift</title>
   </head>
   <body>
     <div class="background">
       <img src="bg.jpg" alt="drifting car" />
     </div>
-    <form>
-      <div class="intro">Let's get you drifting!</div>
-      <div class="section">
-        <div class="section1">
-          <label for="first_name">FIRST NAME</label>
-          <input type="text" id="first_name" name="first_Name" required />
+    <div class="container">
+      <form id="form">
+        <div class="intro">Let's get you drifting!</div>
+        <div class="section">
+          <div class="section1">
+            <div class="info">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" name="first_Name" required />
+            </div>
 
-          <label for="last_name">LAST NAME</label>
-          <input type="text" id="last_name" name="last_name" required />
+            <div class="info">
+              <label for="last_name">LAST NAME</label>
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
 
-          <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email" required />
+            <div class="info">
+              <label for="email">EMAIL</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+          </div>
+
+          <div class="section2">
+            <div class="info">
+              <label for="phone_number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone_number"
+                id="phone_number"
+                required
+              />
+            </div>
+            <div class="info">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" id="password" required />
+            </div>
+            <div class="info">
+              <label for="confirm">CONFIRM PASSWORD</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm"
+                required
+              />
+            </div>
+          </div>
         </div>
 
-        <div class="section2">
-          <label for="phone_number">PHONE NUMBER</label>
-          <input type="tel" name="phone_number" id="phone_number" required />
-
-          <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password" required />
-
-          <label for="confirm">CONFIRM PASSWORD</label>
-          <input
-            type="password"
-            name="confirm_password"
-            id="confirm"
-            required
-          />
-        </div>
-      </div>
-
-      <button type="submit">Create Account</button>
-    </form>
+        <button type="submit">Create Account</button>
+      </form>
+      <div class="sign-up">Already have an account ? <a href="">Log In</a></div>
+    </div>
   </body>
 </html>
