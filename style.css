@@ -6,11 +6,13 @@
 }
 @font-face {
   font-family: font;
-  src: url(hyperviper.ttf);
+  src: url(/assets/hyperviper.ttf);
 }
 
 body {
-  background-color: #e38ca2;
+  width: 100vw;
+  height: 100vh;
+  background-color: #de6c83;
   font-family: font, Arial, Helvetica, sans-serif;
   display: flex;
   padding: 0;
@@ -18,15 +20,11 @@ body {
 }
 
 .background {
-  width: 100%;
-}
-
-img {
-  width: max(30vw, 100%);
-  height: 100vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  background-image: url(./assets/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60%;
 }
 
 .section1,
@@ -76,13 +74,14 @@ button[type="submit"] {
   margin-top: 24px;
   margin-bottom: 24px;
   padding: 10px;
-  border: 2px solid #975f71;
+  border: 2px solid #e38ca2;
   border-radius: 5px;
   background-color: #e38ca2;
   font-family: font, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 button[type="submit"]:hover {
-  background-color: #5c3f4f;
+  background-color: #4381c1;
+  border: 2px solid #4381c1;
   cursor: pointer;
 }
 
@@ -108,5 +107,10 @@ input:invalid {
 }
 
 a {
-  color: #5c3f4f;
+  color: #2660a4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
